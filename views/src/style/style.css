@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body * {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cinza-escuro: #191919;
+    --cinza-medio: #3c3c3c;
+    --cinza-claro: #6b6b6b;
+    --cor-clara: aliceblue;
+    --branco-creme: #f5f2dc;
+    --azul-escuro: #00585e;
+    --azul-claro: #009494;
+}
+
+.body {
+    background-color: var(--cinza-escuro);
+    color: var(--cinza-claro);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.body i {
+    font-size: 75px;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    position: fixed;
+    top: 60%;
+}
+
+.body i:hover {
+    font-size: 77px;
+    color: var(--cor-clara);
+}
+
+.body h1 {
+    font-size: 130px;
+}
+
+.body h2 {
+    font-size: 75px;
+    font-weight: 300;
+}
+
+.body a {
+    text-decoration: none;
+    color: var(--cinza-claro);
+    display: flex;
+    justify-content: center;
+}
+
+.body a:active {
+    color: var(--cor-clara);
+}
+
+.body select {
+    width: 30vw;
+    height: 5vh;
+    background-color: var(--cinza-medio);
+    border-radius: 5px;
+    border: none;
+    color: var(--cor-clara);
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body button {
+    font-family: "Bebas Neue", sans-serif;
+    margin: 20px;
+    font-size: 25px;
+    color: var(--cinza-escuro);
+    background-color: var(--cinza-medio);
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+}
+
+.body button:hover {
+    width: 151px;
+    height: 51px;
+    box-shadow: 0px 0px 2px 1px var(--cinza-claro);
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--branco-creme);
+    color: var(--azul-escuro);
+    box-sizing: border-box;
+}
+
+.introducao {
+    font-size: 130px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.dedicatoria {
+    box-sizing: border-box;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow: hidden;
+    display: none;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+}
+
+.dedicatoria p {
+    text-align: justify;
+    width: 50vw;
+    position: absolute;
+    animation: r_dedicatoria 40s linear infinite;
+}
+
+@keyframes r_dedicatoria {
+    0% {
+        bottom: -140%;
+    }
+
+    100% {
+        bottom: 100%;
+    }
+
+}
+
+
+.misterio {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--azul-escuro);
+    color: var(--azul-claro);
+    font-size: 70px;
+    text-align: center;
+}
+
+.convite {
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+}
+
+.decisao {
+    display: flex;
+    background-color: var(--azul-escuro);
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.decisao button {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.decisao .positivo {
+    background-color: #32cd32;
+    font-size: 50px;
+    color: var(--cor-clara);
+    font-family: "Bebas Neue", sans-serif;
+    animation: sim_b 3s infinite linear;
+    z-index: 99;
+}
+
+@keyframes sim_b {
+    0% {
+        width: 230px;
+        height: 230px;
+
+        background-color: #32cd32;
+    }
+
+    40% {
+
+        width: 230px;
+        height: 230px;
+
+        background-color: #32cd32;
+    }
+
+    80% {
+
+        width: 230px;
+
+        background-color: #32cd32;
+        height: 230px;
+    }
+
+    90% {
+        width: 200px;
+        height: 200px;
+
+        background-color: #49e249;
+    }
+
+    100% {
+        width: 230px;
+        height: 230px;
+
+        background-color: #32cd32;
+    }
+
+}
+
+
+
+.decisao .negativo {
+    
+    width: 130px;
+    height: 130px;
+    background-color: #cd3232;
+    font-size: 50px;
+    color: var(--cor-clara);
+    font-family: "Bebas Neue", sans-serif;
+}
