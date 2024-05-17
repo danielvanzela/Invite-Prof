@@ -22,4 +22,3 @@ Sim ou Não:[tempo indefinido]
 {após aceitar aparece confetes de comemoração}
 {após é redirecionado para tela de agradecimento 
 ("OBRIGADO [nome] por aceitar ser nosso paraninfo/patrono/homenageado!)}
-Animação comemorativa

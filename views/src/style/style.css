@@ -5,6 +5,9 @@ body {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 
 body * {
@@ -110,33 +113,44 @@ body * {
     justify-content: center;
     align-items: center;
     color: var(--azul-escuro);
+    transform: translateX(100vw);
+    transition: all 1s ease;
+}
+
+.introducao h1 {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    display: flex;
 }
 
 .dedicatoria {
-    box-sizing: border-box;
+    height: 110vh;
     font-size: 25px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     overflow: hidden;
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: center;
+    flex-direction: column;
     position: relative;
     color: var(--azul-escuro);
 }
 
 .dedicatoria p {
     text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 50vw;
+    height: 10vh;
     position: absolute;
-    animation: r_dedicatoria 40s linear infinite;
+    /* animation: r_dedicatoria 40s linear infinite; */
 }
 
 @keyframes r_dedicatoria {
     0% {
-        bottom: -140%;
+        top: 0%;
     }
     100% {
-        bottom: 100%;
+        top: -100%;
     }
 }
 
