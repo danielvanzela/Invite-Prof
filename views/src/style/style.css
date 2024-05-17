@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
 body {
     margin: 0;
     padding: 0;
@@ -90,7 +89,6 @@ body * {
     height: 50px;
     cursor: pointer;
     transition: all 0.3s;
-
 }
 
 .body button:hover {
@@ -103,15 +101,15 @@ body * {
     width: 100vw;
     height: 100vh;
     background-color: var(--branco-creme);
-    color: var(--azul-escuro);
     box-sizing: border-box;
 }
 
 .introducao {
     font-size: 130px;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--azul-escuro);
 }
 
 .dedicatoria {
@@ -119,10 +117,11 @@ body * {
     font-size: 25px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     overflow: hidden;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: end;
     position: relative;
+    color: var(--azul-escuro);
 }
 
 .dedicatoria p {
@@ -136,30 +135,27 @@ body * {
     0% {
         bottom: -140%;
     }
-
     100% {
         bottom: 100%;
     }
-
 }
 
-
 .misterio {
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--azul-escuro);
-    color: var(--azul-claro);
+    color: var(--cor-clara);
     font-size: 70px;
     text-align: center;
 }
 
 .convite {
-
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     font-size: 70px;
+    color: var(--azul-claro);
 }
 
 .decisao {
@@ -167,6 +163,9 @@ body * {
     background-color: var(--azul-escuro);
     align-items: center;
     justify-content: space-evenly;
+    color: var(--cor-clara);
+    font-size: 75px;
+    flex-direction: column;
 }
 
 .decisao button {
@@ -184,56 +183,43 @@ body * {
     font-family: "Bebas Neue", sans-serif;
     animation: sim_b 3s infinite linear;
     z-index: 99;
+    margin: 0px 50px 0px 50px;
 }
 
 @keyframes sim_b {
     0% {
         width: 230px;
         height: 230px;
-
         background-color: #32cd32;
     }
-
     40% {
-
         width: 230px;
         height: 230px;
-
         background-color: #32cd32;
     }
-
     80% {
-
         width: 230px;
-
         background-color: #32cd32;
         height: 230px;
     }
-
     90% {
         width: 200px;
         height: 200px;
-
         background-color: #49e249;
     }
-
     100% {
         width: 230px;
         height: 230px;
-
         background-color: #32cd32;
     }
-
 }
 
-
-
 .decisao .negativo {
-    
     width: 130px;
     height: 130px;
     background-color: #cd3232;
     font-size: 50px;
     color: var(--cor-clara);
+    margin: 0px 50px 0px 50px;
     font-family: "Bebas Neue", sans-serif;
 }

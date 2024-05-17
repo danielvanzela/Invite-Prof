@@ -1,0 +1,25 @@
+Introdução: [5s]
+{O nome vai vir da direita ao centro}
+(Nome do professor)
+{durante a apresentação do nome ele vai subir vem devagar, +/- 15 pixel}
+{após exibido a dedicatoria vai subir e quando chegar no nome ele vai suir pra cima junto com a dedicatória}
+
+Dedicatória: [40s]
+(Texto Longo)
+{texto sobe como efeito de créditos de filme}
+
+Mistério: [10s]
+(Com prazer que gostariamos de convidar você para...)( as reticencias subindo)
+{o texto cai de cima após subir a dedicatória, aparecendo o mistério}
+{após ele sai para esquerda, vindo o convite}
+
+Convite: [5s]
+(Ser nosso paraninfo/patrono/homenageado)
+{ o convite aparece vindo da esquerda}
+{ele some indo para baixo}
+
+Sim ou Não:[tempo indefinido]
+{após aceitar aparece confetes de comemoração}
+{após é redirecionado para tela de agradecimento 
+("OBRIGADO [nome] por aceitar ser nosso paraninfo/patrono/homenageado!)}
+Animação comemorativa
