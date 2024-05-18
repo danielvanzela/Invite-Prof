@@ -116,6 +116,7 @@ body * {
     color: var(--azul-escuro);
     transform: translateX(100vw);
     transition: all 1s ease;
+    z-index: 99;
 }
 
 #elemento2 {
@@ -140,6 +141,7 @@ body * {
     background-color: var(--branco-creme);
     position: relative;
     color: var(--azul-escuro);
+    z-index: 98;
 }
 
 .dedicatoria p {
@@ -172,6 +174,7 @@ body * {
     position: absolute;
     top: -100%;
     text-align: center;
+    z-index: 97;
 }
 
 .misterio h1 {
@@ -185,8 +188,20 @@ body * {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--azul-escuro);
     font-size: 70px;
-    color: var(--azul-claro);
+    transition: all 1s ease;
+    position: absolute;
+    top: -100%;
+    text-align: center;
+    z-index: 96;
+}
+
+.convite h1 {
+    background-color: transparent;
+    color: var(--branco-creme);
+    padding: 0;
+    margin: 0;
 }
 
 .decisao {
@@ -197,6 +212,10 @@ body * {
     color: var(--branco-creme);
     font-size: 75px;
     flex-direction: column;
+    z-index: 95;
+    transform: ranslateX(-100vw);
+    transition: all 1s ease;
+
 }
 
 .decisao button {
@@ -205,6 +224,14 @@ body * {
     border-radius: 50%;
     border: none;
     cursor: pointer;
+}
+
+.decisao h1 {
+    background-color: transparent;
+}
+
+.decisao div {
+    background-color: transparent;
 }
 
 .decisao .positivo {
